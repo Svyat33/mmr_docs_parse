@@ -39,7 +39,7 @@ class ExtensionsEnum(str, Enum):
 
 class Document(BaseModel):
     '''Структура описывающая формат принемаемый API'''
-    title: constr(min_length=1, max_length=1024)  # название документа
-    link: HttpUrl  # ссылка на документ на сайте міськради
-    file_content: Base64  # содержимое документа в Base64 формате.
+    title: constr(min_length=1, max_length=1024)  # назва документа
+    link: HttpUrl  # посилання на документ на сайте міськради
+    file_content: Base64  # зміст документа в Base64 формате.
     file_type: ExtensionsEnum
