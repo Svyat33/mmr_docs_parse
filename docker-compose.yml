@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  mmrparse:
+    build:
+      context: ./
+    env_file:
+      - ".env"
+    environment:
+      - C_FORCE_ROOT=1
+    tty: true
+    command: bash -c "python main.py"
