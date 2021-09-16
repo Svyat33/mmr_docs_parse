@@ -55,7 +55,7 @@ class DecisionLink:
 
         self.__decision_idx += 1
         return_link = self.__links[self.__decision_idx]
-        if self.__decision_idx >= len(self.__links):
+        if self.__decision_idx+1 >= len(self.__links):
             self.__links = None
         return return_link
 
