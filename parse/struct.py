@@ -35,6 +35,7 @@ class ExtensionsEnum(str, Enum):
     txt = 'txt'
     doc = 'doc'
     docx = 'docx'
+    pdf = 'pdf'
 
 
 class Document(BaseModel):
